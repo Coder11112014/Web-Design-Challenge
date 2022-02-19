@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<!--head-->
+
+<head>
+    <title>
+        Web-Design_Challenge
+    </title>
+    <!-- link to bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!---refernce links to bootstrap tool-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--reference link to css stylesheet-->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body class="body">
+    <!--Create nav bar with collapse for small screen-->
+    <nav class=" navbar-expand-lg navbar-light navbar nav-color">
+
+
+        <a class="navbar-brand home" href="index.html"> Home</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--convert the nav bar to small size with end the bar format-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 sub-nav-color">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Plots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Visual_templates/temp.html">Max
+                                Temperature</a>
+
+                            <a class="dropdown-item" href="Visual_templates/humidity.html">Humidity</a>
+
+                            <a class="dropdown-item" href="Visual_templates/cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Visual_templates/windspeed.html">Wind Speed</a>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Visual_templates/comparisons.html">Comparison </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Visual_templates/data.html">Data </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        Summary
+    </header>
+
+    <br>
+    <!--body main-->
+    <!-- Creates the Overall Grid -->
+    <!--use container class for columns the page in many sizes-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="main">
+                    <h2 class="Title">
+                        Weather Analysis with Latitude
+                    </h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img src="Resources/assets/images/Fig1.png" class="img-fluid shadow-lg p-3 mb-5 img"
+                                alt="lat vs temp">
+                        </div>
+                        <div class="col-md-4">
+                            <section class="section">
+                                <p> The purpose of this project was to analyze how weather changes as you get closer
+                                    to the Equator. We've selected randomly more than 500 cities in the world using
+                                    the Open Weather Map API.
+                                    <br>
+                                    <br>
+                                    After assembling the dataset, we used Matplotlib to plot various aspects of the
+                                    weather vs latitude.
+                                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+                                    This site provides the source data and visualizations created as part of the
+                                    analysis,
+                                    as well as explanations and descriptions of any trends and correlations witnessed
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="main">
+                    <h3 class="center Title">
+                        Visualizations
+                    </h3>
+                    <hr>
+                    <!--Grid for the Visual_templates panel-->
+                    <div class="container">
+                        <div class="row">
+                            <!--Four Visual_templates -->
+                            <div class="col-sm-3 col-lg-6">
+                                <h4 class="Title">
+                                    City Latitude vs Temperature
+                                </h4>
+                                <a href="Visual_templates/temp.html"><img src="Resources/assets/images/Fig1.png"
+                                        class="img-fluid shadow-lg p-1  mb-5 img"></a>
+                            </div>
+                            <div class="col-sm-3 col-lg-6">
+                                <h4 class="Title">
+                                    City Latitude vs Humidity
+                                </h4>
+                                <a href="Visual_templates/humidity.html"><img src="Resources/assets/images/Fig2.png"
+                                        class="img-fluid shadow-lg p-1 mb-5 img" alt="humidity vs lat"></a>
+                            </div>
+                            <div class="col-sm-3 col-lg-6">
+                                <h4 class="Title">
+                                    City Latitude vs Cloudiness
+                                </h4>
+                                <a href="Visual_templates/cloudiness.html"><img src="Resources/assets/images/Fig3.png"
+                                        class="img-fluid shadow-lg p-1 mb-5 img" alt="cloudiness vs lat"></a>
+                            </div>
+                            <div class="col-sm-3 col-lg-6">
+                                <h4 class="Title">
+                                    City Latitude vs Wind Speed
+                                </h4>
+                                <a href="Visual_templates/windspeed.html"><img src="Resources/assets/images/Fig4.png"
+                                        class="img-fluid shadow-lg p-1 mb-5 img">
+                            </div></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

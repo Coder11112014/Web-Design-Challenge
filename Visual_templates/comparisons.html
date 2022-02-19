@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<!--head-->
+<head>
+    <title>
+        Web-Design_Challenge
+    </title>
+    <!-- link to bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!---refernce links to bootstrap tool-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--reference link to css stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--Create nav bar with collapse for small screen-->
+    <nav class=" navbar-expand-lg navbar-light navbar nav-color">
+
+        <!--Link to home-->
+        <a class="navbar-brand home" href="../index.html"> Home </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--convert the nav bar to small size with end the bar format-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 sub-nav-color">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Plots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temperatures.html">Max
+                                Temperature</a>
+
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="comparisons.html">Comparison </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="data.html">Data </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main">
+            <div class="row">
+                <h3 class="center Title">
+                    Comparison Analysis between city latitude and the four scenorios
+                </h3>
+                <hr>
+                <h5 class="color section">
+                    Click a chart to get analysis of that chart.
+                </h5>
+                <div class="col-sm-12 col-lg-6">
+                    <h4 class="font">
+                        Latitude vs. Temp
+                    </h4>
+                    <a href="temp.html"><img src="../Resources/assets/images/Fig1.png" class="img-fluid shadow-lg p-3 mb-5  img" alt="lat vs temp"></a>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <h4 class="font">
+                        Latitude vs. Humidity
+                    </h4>
+                    <a href="humidity.html"><img src="../Resources/assets/images/Fig2.png" class="img-fluid shadow-lg p-3 mb-5 img" alt="lat vs humidity"></a>
+                </div>
+                
+                <div class="col-sm-12 col-lg-6">
+                    <h4 class="font">
+                        Latitude vs.Cloudiness
+                    </h4>
+                    <a href="cloudiness.html"><img src="../Resources/assets/images/Fig3.png" class="img-fluid shadow-lg p-3 mb-5 img" alt="lat vs cloudiness"></a>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <h4 class="font">
+                        Latitude vs.Wind Speed
+                    </h4>
+                    <a href="wind.html"><img src="../Resources/assets/images/Fig4.png" class="img-fluid shadow-lg p-3 mb-5 img" alt="lat vs wind_speed"></a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
